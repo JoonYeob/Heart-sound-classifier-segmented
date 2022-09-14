@@ -1,0 +1,8 @@
+scipy
+tensorflow
+tensorflow-io
+transformers==4.19.2
+datasets==2.2.2
+torch
+sklearn
+
