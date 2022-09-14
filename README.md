@@ -51,7 +51,7 @@ This code is one of the version using a segmented sound.
         [...]
         Successfully tagged image:latest
 
-        user@computer:~/example/Heart-sound-classifier-segmented$ docker run -it -v ~/example/model:/physionet/model -v ~/example/test_data:/physionet/test_data -v ~/example/test_outputs:/physionet/test_outputs -v ~/example/training_data:/physionet/training_data image bash
+        user@computer:~/example/Heart-sound-classifier-segmented$ docker run -it --gpus all -v ~/example/model:/physionet/model -v ~/example/test_data:/physionet/test_data -v ~/example/test_outputs:/physionet/test_outputs -v ~/example/training_data:/physionet/training_data image bash
 
         root@[...]:/physionet# python train_model.py training_data model
 
